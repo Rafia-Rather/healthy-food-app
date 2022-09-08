@@ -1,0 +1,137 @@
+/* ============Media Queries=========== */
+/* =============Mobile Layout========== */
+/* screen= 544px */
+@media (max-width: 34em) {
+  .container {
+    width: 100%;
+    padding: 0 3.5rem;
+  }
+  /* Header section */
+  .logo {
+    width: 28%;
+  }
+
+  .side-icon-box {
+    gap: 1rem;
+  }
+  .menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  .main-nav {
+    display: none;
+  }
+  /* Hero section */
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding-top: 15rem;
+  }
+
+  .product-img {
+    width: 90%;
+    position: static;
+  }
+
+  .product-image-box {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .heading-primary {
+    font-size: 5.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .hero-description {
+    width: 37rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .rating {
+    justify-content: center;
+  }
+  .corner-img1,
+  .add-to-cart-box {
+    display: none;
+  }
+
+  .food-features {
+    padding: 1.6rem 0;
+  }
+
+  .know-your-food-heading {
+    font-size: 3rem;
+  }
+
+  .know-your-food .container {
+    grid-template-columns: 1fr;
+    row-gap: 10rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .nutri-values ul {
+    font-size: 1.6rem;
+    font-weight: 500;
+    gap: 3.2rem;
+  }
+
+  .food-details {
+    gap: 4rem;
+  }
+}
+
+/* screen = 478 */
+@media (max-width: 30em) {
+  .heading-primary {
+    font-size: 5rem;
+  }
+  .food-details {
+    gap: 3rem;
+  }
+}
+
+/* screen = 435 */
+@media (max-width: 27em) {
+  .food-details {
+    gap: 3rem;
+  }
+}
+
+/* screen = 416 */
+@media (max-width: 27em) {
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+  .food-details {
+    gap: 2rem;
+  }
+}
+
+/* screen= 396px */
+@media (max-width: 25em) {
+  .heading-primary {
+    font-size: 4rem;
+    /* font-weight: 700; */
+  }
+  .hero-description {
+    font: size 1.6rem;
+  }
+  .food-details {
+    gap: 1rem;
+  }
+}

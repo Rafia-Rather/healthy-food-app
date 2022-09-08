@@ -1,0 +1,376 @@
+/* =====Typography==== */
+/* 
+  Font-families:
+  - Roboto Mono
+  - Roboto
+  - Playfair Display
+  Font-weights:
+  - 400, 500, 700, 900
+
+  Colors:
+  - #352817
+  - #ffd7bf
+  - #f8a271
+  - #f5e0bc
+  - #f7f2df
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: "Roboto Mono", serif, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1;
+  overflow-x: hidden;
+  color: #352817;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+/* ===========Header Section=============== */
+.header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background: transparent;
+  line-height: 2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* background-color: #f7f2df; */
+}
+.nav-list {
+  display: flex;
+  gap: 5rem;
+}
+
+.main-nav-link {
+  text-transform: uppercase;
+  color: #352817;
+}
+
+.side-icon-box {
+  display: flex;
+  gap: 5rem;
+}
+
+.menu {
+  display: none;
+}
+
+/* ===========Hero Section=============== */
+
+.hero {
+  background-color: #ffd7bf;
+  position: relative;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  padding-top: 20.5rem;
+}
+
+.heading-primary {
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 12.5rem;
+  line-height: 125px;
+  margin-bottom: 5.25rem;
+}
+
+.rating {
+  margin-bottom: 2.75rem;
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+}
+.rating-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 20px;
+  display: inline-block;
+}
+
+.hero-description {
+  width: 54.4rem;
+  font-size: 2rem;
+  line-height: 30px;
+  margin-bottom: 2.5rem;
+}
+
+.size {
+  margin-bottom: 3rem;
+}
+.size-text {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 15px;
+  font-weight: 500;
+  letter-spacing: 5%;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 20px;
+  padding: 1rem 1.5rem;
+
+  border-radius: 42px;
+  text-decoration: none;
+  color: #362918;
+}
+
+.btn--full {
+  background: #f8a271;
+}
+
+.btn--outline {
+  border: 1px solid #f8a271;
+}
+
+.price {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 40px;
+  letter-spacing: -1%;
+  color: #362918;
+  margin-bottom: 11.9rem;
+}
+
+.product-img {
+  width: 30%;
+
+  position: fixed;
+  left: 37%;
+  top: 42%;
+}
+.corner-img1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Add to Cart box */
+.add-to-cart-box {
+  width: 43rem;
+  height: 8rem;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 1rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  bottom: 14.9rem;
+  right: 5rem;
+}
+
+.btn-up {
+  width: 5.2rem;
+  height: 5.2rem;
+  background: #f5e0bc;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-box-text h6,
+.cart-box-text p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: #000;
+}
+.cart-box-text h6 {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.btn-add {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 30px;
+
+  border: none;
+  border-radius: 90px;
+  padding: 1.6rem;
+  background: #362918;
+  color: #fff;
+}
+/* =========================== */
+/* =======KNOW YOUR FOOD SECTION======*/
+/* =========================== */
+
+.know-your-food {
+  width: 100%;
+  background: #fabe9c;
+  padding-bottom: 20rem;
+}
+
+/* =======FOOD Features - Marquee=======*/
+.food-features {
+  background-color: #f8a271;
+  width: 100%;
+  padding: 3.2rem 0;
+  overflow: hidden;
+  margin-bottom: 9.6rem;
+}
+
+.feautres-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  /* overflow: hidden; */
+
+  animation: marquee 20s linear infinite;
+}
+
+/* Make it move */
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.feautres-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.feautres-list li p {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/*  KNow Your Food */
+/* Section heading */
+.know-your-food-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #352817;
+  text-align: center;
+  margin-bottom: 12rem;
+}
+
+.know-your-food .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40rem;
+}
+
+.nutri-facts-title-box,
+.food-inside-title-box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.nutri-facts-title-box p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nutri-values ul {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.nutri-values ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dotted-line {
+  display: inline-block;
+  border-bottom: 4px dotted #f26b25;
+  flex: 1;
+}
+
+/* what's inside */
+
+.food-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.seeds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+figcaption span {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
