@@ -23,7 +23,7 @@
 
 html {
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -128,7 +128,7 @@ a {
 }
 
 .hero-description {
-  width: 54.4rem;
+  /* width: 54.4rem; */
   font-size: 2rem;
   line-height: 30px;
   margin-bottom: 2.5rem;

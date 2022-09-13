@@ -4,7 +4,7 @@
 @media (max-width: 34em) {
   .container {
     width: 100%;
-    padding: 0 3.5rem;
+    padding: 0 1.5rem;
   }
   /* Header section */
   .logo {
@@ -53,7 +53,7 @@
     text-align: center;
   }
   .hero-description {
-    width: 37rem;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 2rem;
@@ -105,33 +105,12 @@
   }
 }
 
-/* screen = 435 */
-@media (max-width: 27em) {
-  .food-details {
-    gap: 3rem;
-  }
-}
-
 /* screen = 416 */
 @media (max-width: 27em) {
   .heading-primary {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .food-details {
     gap: 2rem;
-  }
-}
-
-/* screen= 396px */
-@media (max-width: 25em) {
-  .heading-primary {
-    font-size: 4rem;
-    /* font-weight: 700; */
-  }
-  .hero-description {
-    font: size 1.6rem;
-  }
-  .food-details {
-    gap: 1rem;
   }
 }
